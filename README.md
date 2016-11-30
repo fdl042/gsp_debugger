@@ -13,7 +13,7 @@ To leverage the template I wrote at /grails-app/views/common/includes/utility/_d
 
 
     <g:javascript>
-      window.ncvdata = window.ncvdata || {};
+      window.data = window.data || {};
       <g:each in="${pageScope.getVariableNames()}" >
         <g:if test="${it != 'session' && (! it.contains('.')) }">
           window.data.${it} = '${pageScope.getVariable(it)}';
